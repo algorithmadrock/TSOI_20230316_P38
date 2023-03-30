@@ -37,7 +37,7 @@ public class Pessoa extends Thread{
 		while (andado<200) {
 			andado+= (int) (Math.random()*3 + 4);
 			try {
-				sleep(100);
+				sleep(1000000000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -46,7 +46,7 @@ public class Pessoa extends Thread{
 	}
 
 	private void cruzarporta() {
-		int tempo = (int) (Math.random()*101 + 100);
+		int tempo = (int) (Math.random()*1000000001 + 1000000000);
 		try {
 			sleep(tempo);
 		} catch (InterruptedException e) {
